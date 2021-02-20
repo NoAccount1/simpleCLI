@@ -34,8 +34,18 @@
       );
 
     </script> -->
-    <script type="text/javascript">
-      window.location.replace('https://noaccount1.github.io/simpleCLI/')
-    </script>
   </head>
+  <body>
+    <button onclick="redirect()">Go to google search</button>
+    <script type="text/javascript">
+      const redirect = () => {
+        if (window.location.origin & window.location.pathname) {
+          window.location.replace(window.location.origin + window.location.pathname)
+        } else if (window.location.protocol === 'file:') {
+          alert('You are on a local file')
+        }
+      }
+      console.log(window.location)
+    </script>
+  </body>
 </html>
