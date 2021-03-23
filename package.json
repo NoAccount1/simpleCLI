@@ -1,0 +1,41 @@
+{
+  "name": "@mouamem/simple-cli",
+  "version": "0.0.1",
+  "description": "A simple CLI to enhance my projects deployment on FireBase and GitHub Pages",
+  "main": "src/cli.js",
+  "bin": {
+    "@mouamem/create-project": "bin/create-project/create-project",
+    "create-project": "bin/create-project",
+    "@mouamem/deploy": "bin/deploy/deploy",
+    "deploy": "bin/deploy/deploy"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoAccount1/simpleCLI.git"
+  },
+  "keywords": [
+    "CLI",
+    "FireBase",
+    "gh-pages",
+    "angular"
+  ],
+  "author": "NoAccount1",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NoAccount1/simpleCLI/issues"
+  },
+  "homepage": "https://github.com/NoAccount1/simpleCLI#readme",
+  "dependencies": {
+    "arg": "^5.0.0",
+    "chalk": "^4.1.0",
+    "esm": "^3.2.25",
+    "inquirer": "^8.0.0",
+    "ncp": "^2.0.0"
+  }
+}
